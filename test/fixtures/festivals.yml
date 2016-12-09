@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cost: 1.5
+  start: 2016-12-08
+  finish: 2016-12-08
+  minimum_age: 1
+  location: MyString
+  details: MyText
+  image: MyString
+
+two:
+  cost: 1.5
+  start: 2016-12-08
+  finish: 2016-12-08
+  minimum_age: 1
+  location: MyString
+  details: MyText
+  image: MyString
