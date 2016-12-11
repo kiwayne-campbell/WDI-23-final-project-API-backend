@@ -16,6 +16,7 @@ class FestivalsController < ApplicationController
   # POST /festivals
   def create
     @festival = Festival.new(festival_params)
+    @festival.user = current_user
 
     if @festival.save
       render json: @festival, status: :created, location: @festival
