@@ -3,12 +3,13 @@ class FestivalsController < ApplicationController
 
   # GET /festivals
   def index
-    @festivals = Festival.all
+    # @festivals = Festival.all
 
-  #   if
-  #   @festivals.q = Festival.all(params[:q])
-  # else
-  #   @festivals = Festival.all
+    if params[:q]
+      @festivals = Festival.where("festival_name ILIKE :q OR location ILIKE :q", q: "%#{params[:q]}%")
+    else
+      @festivals = Festival.all
+    end
 
     render json: @festivals
   end
