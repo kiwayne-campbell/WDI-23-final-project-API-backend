@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   scope :api do
     resources :comments
     resources :festivals
+    post 'festivals/:id/favorite', to: 'festivals#favorite'
     resources :users, except: [:create]
 
     post 'register', to: 'auth#register'

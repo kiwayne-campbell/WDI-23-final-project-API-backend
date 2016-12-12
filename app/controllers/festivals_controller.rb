@@ -1,5 +1,5 @@
 class FestivalsController < ApplicationController
-  before_action :set_festival, only: [:show, :update, :destroy]
+  before_action :set_festival, only: [:show, :favorite, :update, :destroy]
 
   # GET /festivals
   def index
@@ -10,7 +10,13 @@ class FestivalsController < ApplicationController
 
   # GET /festivals/1
   def show
-    render json: @festival.as_json(include: [{ comments: { include: :user }}, :users])
+    render json: @festival, include: ['users', 'comments', 'comments.user']
+  end
+
+  # POST /festivals/:id/favorite
+  def favorite
+    @festival.users << current_user
+    render json: @festival
   end
 
   # POST /festivals
