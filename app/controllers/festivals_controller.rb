@@ -5,6 +5,11 @@ class FestivalsController < ApplicationController
   def index
     @festivals = Festival.all
 
+  #   if
+  #   @festivals.q = Festival.all(params[:q])
+  # else
+  #   @festivals = Festival.all
+
     render json: @festivals
   end
 

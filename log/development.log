@@ -15375,3 +15375,372 @@ Processing by FestivalsController#index as HTML
 Completed 200 OK in 83ms (Views: 53.3ms | ActiveRecord: 10.1ms)
 
 
+Started GET "/api/festivals" for ::1 at 2016-12-12 13:44:08 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (2.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by FestivalsController#index as HTML
+  [1m[36mUser Load (4.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFestival Load (3.3ms)[0m  [1m[34mSELECT "festivals".* FROM "festivals"[0m
+[active_model_serializers]   [1m[35m (1.9ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 1]]
+[active_model_serializers]   [1m[35m (0.6ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 2]]
+[active_model_serializers]   [1m[35m (0.5ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 3]]
+[active_model_serializers]   [1m[35m (0.5ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 4]]
+[active_model_serializers]   [1m[35m (0.6ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 5]]
+[active_model_serializers]   [1m[35m (0.5ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 7]]
+[active_model_serializers]   [1m[35m (0.5ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 6]]
+[active_model_serializers]   [1m[36mComment Load (7.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 1]]
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 2]]
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 3]]
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 4]]
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 5]]
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 7]]
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 6]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (133.6ms)
+Completed 200 OK in 281ms (Views: 147.0ms | ActiveRecord: 60.5ms)
+
+
+Started GET "/api/festivals" for ::1 at 2016-12-12 13:45:15 +0000
+Processing by FestivalsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFestival Load (0.6ms)[0m  [1m[34mSELECT "festivals".* FROM "festivals"[0m
+[active_model_serializers]   [1m[35m (1.8ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 1]]
+[active_model_serializers]   [1m[35m (0.5ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 2]]
+[active_model_serializers]   [1m[35m (0.5ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 3]]
+[active_model_serializers]   [1m[35m (0.5ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 4]]
+[active_model_serializers]   [1m[35m (0.7ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 5]]
+[active_model_serializers]   [1m[35m (0.5ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 7]]
+[active_model_serializers]   [1m[35m (2.7ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 6]]
+[active_model_serializers]   [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 1]]
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 2]]
+[active_model_serializers]   [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 3]]
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 4]]
+[active_model_serializers]   [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 5]]
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 7]]
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 6]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (40.79ms)
+Completed 200 OK in 46ms (Views: 32.5ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/api/festivals" for ::1 at 2016-12-12 13:46:44 +0000
+Processing by FestivalsController#index as HTML
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFestival Load (0.6ms)[0m  [1m[34mSELECT "festivals".* FROM "festivals"[0m
+[active_model_serializers]   [1m[35m (0.7ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 1]]
+[active_model_serializers]   [1m[35m (0.6ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 2]]
+[active_model_serializers]   [1m[35m (0.7ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 3]]
+[active_model_serializers]   [1m[35m (0.6ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 4]]
+[active_model_serializers]   [1m[35m (0.7ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 5]]
+[active_model_serializers]   [1m[35m (0.7ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 7]]
+[active_model_serializers]   [1m[35m (0.5ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 6]]
+[active_model_serializers]   [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 1]]
+[active_model_serializers]   [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 2]]
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 3]]
+[active_model_serializers]   [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 4]]
+[active_model_serializers]   [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 5]]
+[active_model_serializers]   [1m[36mComment Load (1.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 7]]
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 6]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (78.72ms)
+Completed 200 OK in 116ms (Views: 80.0ms | ActiveRecord: 12.7ms)
+
+
+Started GET "/api/festivals" for ::1 at 2016-12-12 13:46:57 +0000
+Processing by FestivalsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFestival Load (4.9ms)[0m  [1m[34mSELECT "festivals".* FROM "festivals"[0m
+[active_model_serializers]   [1m[35m (0.6ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 1]]
+[active_model_serializers]   [1m[35m (0.5ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 2]]
+[active_model_serializers]   [1m[35m (0.6ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 3]]
+[active_model_serializers]   [1m[35m (2.5ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 4]]
+[active_model_serializers]   [1m[35m (0.6ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 5]]
+[active_model_serializers]   [1m[35m (0.7ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 7]]
+[active_model_serializers]   [1m[35m (0.6ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 6]]
+[active_model_serializers]   [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 1]]
+[active_model_serializers]   [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 2]]
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 3]]
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 4]]
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 5]]
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 7]]
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 6]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (50.19ms)
+Completed 200 OK in 62ms (Views: 44.9ms | ActiveRecord: 14.6ms)
+
+
+Started GET "/api/festivals" for ::1 at 2016-12-12 13:47:31 +0000
+Processing by FestivalsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 7.2ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/festivals_controller.rb:6:in `index'
+Started GET "/api/festivals" for ::1 at 2016-12-12 13:48:09 +0000
+Processing by FestivalsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFestival Load (0.7ms)[0m  [1m[34mSELECT "festivals".* FROM "festivals"[0m
+[active_model_serializers]   [1m[35m (0.6ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 1]]
+[active_model_serializers]   [1m[35m (0.5ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 2]]
+[active_model_serializers]   [1m[35m (0.5ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 3]]
+[active_model_serializers]   [1m[35m (0.6ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 4]]
+[active_model_serializers]   [1m[35m (0.6ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 5]]
+[active_model_serializers]   [1m[35m (0.6ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 7]]
+[active_model_serializers]   [1m[35m (0.9ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 6]]
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 1]]
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 2]]
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 3]]
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 4]]
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 5]]
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 7]]
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 6]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (51.32ms)
+Completed 200 OK in 120ms (Views: 53.9ms | ActiveRecord: 21.7ms)
+
+
+Started GET "/api/festivals" for ::1 at 2016-12-12 13:51:54 +0000
+Processing by FestivalsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFestival Load (0.6ms)[0m  [1m[34mSELECT "festivals".* FROM "festivals"[0m
+[active_model_serializers]   [1m[35m (0.7ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 1]]
+[active_model_serializers]   [1m[35m (0.9ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 2]]
+[active_model_serializers]   [1m[35m (0.6ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 3]]
+[active_model_serializers]   [1m[35m (0.6ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 4]]
+[active_model_serializers]   [1m[35m (0.5ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 5]]
+[active_model_serializers]   [1m[35m (0.5ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 7]]
+[active_model_serializers]   [1m[35m (0.5ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 6]]
+[active_model_serializers]   [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 1]]
+[active_model_serializers]   [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 2]]
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 3]]
+[active_model_serializers]   [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 4]]
+[active_model_serializers]   [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 5]]
+[active_model_serializers]   [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 7]]
+[active_model_serializers]   [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 6]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (53.78ms)
+Completed 200 OK in 90ms (Views: 66.3ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/api/festivals/1" for ::1 at 2016-12-12 13:51:59 +0000
+Processing by FestivalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFestival Load (1.3ms)[0m  [1m[34mSELECT  "festivals".* FROM "festivals" WHERE "festivals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[35m (0.9ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 1]]
+[active_model_serializers]   [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 1]]
+[active_model_serializers] Rendered FestivalSerializer with ActiveModelSerializers::Adapter::Attributes (12.37ms)
+Completed 200 OK in 22ms (Views: 11.8ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/api/festivals/1" for ::1 at 2016-12-12 13:56:47 +0000
+Processing by FestivalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFestival Load (3.2ms)[0m  [1m[34mSELECT  "festivals".* FROM "festivals" WHERE "festivals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[35m (0.8ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 1]]
+[active_model_serializers]   [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 1]]
+[active_model_serializers] Rendered FestivalSerializer with ActiveModelSerializers::Adapter::Attributes (28.51ms)
+Completed 200 OK in 65ms (Views: 32.0ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/api/festivals/1" for ::1 at 2016-12-12 13:57:29 +0000
+Processing by FestivalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFestival Load (1.2ms)[0m  [1m[34mSELECT  "festivals".* FROM "festivals" WHERE "festivals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[35m (2.0ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 1]]
+[active_model_serializers]   [1m[36mComment Load (1.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 1]]
+[active_model_serializers] Rendered FestivalSerializer with ActiveModelSerializers::Adapter::Attributes (17.58ms)
+Completed 200 OK in 26ms (Views: 14.9ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/api/festivals/" for ::1 at 2016-12-12 13:59:10 +0000
+Processing by FestivalsController#index as HTML
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.05ms)
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 401 Unauthorized in 41ms (Views: 37.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/festivals/1" for ::1 at 2016-12-12 14:01:34 +0000
+Processing by FestivalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFestival Load (1.2ms)[0m  [1m[34mSELECT  "festivals".* FROM "festivals" WHERE "festivals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[35m (0.7ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 1]]
+[active_model_serializers]   [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 1]]
+[active_model_serializers] Rendered FestivalSerializer with ActiveModelSerializers::Adapter::Attributes (36.51ms)
+Completed 200 OK in 64ms (Views: 37.6ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/api/festivals/1" for ::1 at 2016-12-12 14:01:40 +0000
+Processing by FestivalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFestival Load (0.5ms)[0m  [1m[34mSELECT  "festivals".* FROM "festivals" WHERE "festivals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[35m (1.2ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 1]]
+[active_model_serializers]   [1m[36mComment Load (1.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 1]]
+[active_model_serializers] Rendered FestivalSerializer with ActiveModelSerializers::Adapter::Attributes (11.39ms)
+Completed 200 OK in 16ms (Views: 9.2ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/api/festivals/1" for ::1 at 2016-12-12 14:01:56 +0000
+Processing by FestivalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFestival Load (0.5ms)[0m  [1m[34mSELECT  "festivals".* FROM "festivals" WHERE "festivals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[35m (1.9ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 1]]
+[active_model_serializers]   [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 1]]
+[active_model_serializers] Rendered FestivalSerializer with ActiveModelSerializers::Adapter::Attributes (14.64ms)
+Completed 200 OK in 20ms (Views: 12.7ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/api/festivals/1" for ::1 at 2016-12-12 14:02:04 +0000
+Processing by FestivalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFestival Load (0.4ms)[0m  [1m[34mSELECT  "festivals".* FROM "festivals" WHERE "festivals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[35m (0.6ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 1]]
+[active_model_serializers]   [1m[36mComment Load (1.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 1]]
+[active_model_serializers] Rendered FestivalSerializer with ActiveModelSerializers::Adapter::Attributes (12.86ms)
+Completed 200 OK in 17ms (Views: 11.9ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/api/festivals/" for ::1 at 2016-12-12 14:06:09 +0000
+Processing by FestivalsController#index as HTML
+  Parameters: {"festival"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFestival Load (0.5ms)[0m  [1m[34mSELECT "festivals".* FROM "festivals"[0m
+[active_model_serializers]   [1m[35m (0.6ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 1]]
+[active_model_serializers]   [1m[35m (0.5ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 2]]
+[active_model_serializers]   [1m[35m (0.6ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 3]]
+[active_model_serializers]   [1m[35m (0.6ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 4]]
+[active_model_serializers]   [1m[35m (0.5ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 5]]
+[active_model_serializers]   [1m[35m (0.5ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 7]]
+[active_model_serializers]   [1m[35m (0.6ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 6]]
+[active_model_serializers]   [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 1]]
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 2]]
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 3]]
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 4]]
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 5]]
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 7]]
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 6]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (56.27ms)
+Completed 200 OK in 140ms (Views: 59.7ms | ActiveRecord: 25.7ms)
+
+
+Started GET "/api/festivals/" for ::1 at 2016-12-12 14:08:13 +0000
+Processing by FestivalsController#index as HTML
+  Parameters: {"festival"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFestival Load (0.7ms)[0m  [1m[34mSELECT "festivals".* FROM "festivals"[0m
+[active_model_serializers]   [1m[35m (0.6ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 1]]
+[active_model_serializers]   [1m[35m (0.7ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 2]]
+[active_model_serializers]   [1m[35m (0.5ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 3]]
+[active_model_serializers]   [1m[35m (0.7ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 4]]
+[active_model_serializers]   [1m[35m (0.5ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 5]]
+[active_model_serializers]   [1m[35m (0.6ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 7]]
+[active_model_serializers]   [1m[35m (0.5ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 6]]
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 1]]
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 2]]
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 3]]
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 4]]
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 5]]
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 7]]
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 6]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (54.9ms)
+Completed 200 OK in 114ms (Views: 60.5ms | ActiveRecord: 24.1ms)
+
+
+Started GET "/api/festivals/" for ::1 at 2016-12-12 14:08:51 +0000
+Processing by FestivalsController#index as HTML
+  Parameters: {"festival"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFestival Load (0.4ms)[0m  [1m[34mSELECT "festivals".* FROM "festivals"[0m
+[active_model_serializers]   [1m[35m (0.6ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 1]]
+[active_model_serializers]   [1m[35m (0.5ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 2]]
+[active_model_serializers]   [1m[35m (0.6ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 3]]
+[active_model_serializers]   [1m[35m (0.9ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 4]]
+[active_model_serializers]   [1m[35m (0.5ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 5]]
+[active_model_serializers]   [1m[35m (0.7ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 7]]
+[active_model_serializers]   [1m[35m (0.6ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 6]]
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 1]]
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 1]]
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 2]]
+[active_model_serializers]   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 2]]
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 3]]
+[active_model_serializers]   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 3]]
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 4]]
+[active_model_serializers]   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 4]]
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 5]]
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 5]]
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 7]]
+[active_model_serializers]   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 7]]
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 6]]
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 6]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (68.09ms)
+Completed 200 OK in 123ms (Views: 66.3ms | ActiveRecord: 26.6ms)
+
+
+Started GET "/api/festivals/1" for ::1 at 2016-12-12 14:12:06 +0000
+Processing by FestivalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFestival Load (1.0ms)[0m  [1m[34mSELECT  "festivals".* FROM "festivals" WHERE "festivals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[35m (1.3ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 1]]
+[active_model_serializers]   [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 1]]
+[active_model_serializers]   [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 1]]
+[active_model_serializers] Rendered FestivalSerializer with ActiveModelSerializers::Adapter::Attributes (35.95ms)
+Completed 200 OK in 73ms (Views: 36.3ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/api/festivals/" for ::1 at 2016-12-12 14:12:28 +0000
+Processing by FestivalsController#index as HTML
+  Parameters: {"festival"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFestival Load (0.4ms)[0m  [1m[34mSELECT "festivals".* FROM "festivals"[0m
+[active_model_serializers]   [1m[35m (0.5ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 1]]
+[active_model_serializers]   [1m[35m (0.5ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 2]]
+[active_model_serializers]   [1m[35m (0.6ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 3]]
+[active_model_serializers]   [1m[35m (0.7ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 4]]
+[active_model_serializers]   [1m[35m (1.0ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 5]]
+[active_model_serializers]   [1m[35m (0.5ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 7]]
+[active_model_serializers]   [1m[35m (0.5ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 6]]
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 1]]
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 1]]
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 2]]
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 2]]
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 3]]
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 3]]
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 4]]
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 4]]
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 5]]
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 5]]
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 7]]
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 7]]
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 6]]
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 6]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (95.98ms)
+Completed 200 OK in 161ms (Views: 98.4ms | ActiveRecord: 25.8ms)
+
+
+Started GET "/api/festivals/1" for ::1 at 2016-12-12 14:13:19 +0000
+Processing by FestivalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFestival Load (0.8ms)[0m  [1m[34mSELECT  "festivals".* FROM "festivals" WHERE "festivals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[35m (0.8ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 1]]
+[active_model_serializers]   [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 1]]
+[active_model_serializers]   [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 1]]
+[active_model_serializers] Rendered FestivalSerializer with ActiveModelSerializers::Adapter::Attributes (25.59ms)
+Completed 200 OK in 67ms (Views: 31.4ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/api/festivals/1" for ::1 at 2016-12-12 14:15:36 +0000
+Processing by FestivalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFestival Load (0.6ms)[0m  [1m[34mSELECT  "festivals".* FROM "festivals" WHERE "festivals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[35m (0.6ms)[0m  [1m[34mSELECT "users".id FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 1]]
+[active_model_serializers]   [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."festival_id" = $1[0m  [["festival_id", 1]]
+[active_model_serializers]   [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "festivals_users" ON "users"."id" = "festivals_users"."user_id" WHERE "festivals_users"."festival_id" = $1[0m  [["festival_id", 1]]
+[active_model_serializers] Rendered FestivalSerializer with ActiveModelSerializers::Adapter::Attributes (41.79ms)
+Completed 200 OK in 75ms (Views: 42.7ms | ActiveRecord: 4.5ms)
+
+
