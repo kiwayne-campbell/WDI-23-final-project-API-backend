@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     resources :comments
     get 'festivals/featured', to: 'festivals#featured'
     post 'festivals/:id/favorite', to: 'festivals#favorite'
+    post 'festivals/:id/unfavorite', to: 'festivals#unfavorite'
     resources :festivals
     resources :users, except: [:create]
 

@@ -1,5 +1,5 @@
 class FestivalsController < ApplicationController
-  before_action :set_festival, only: [:show, :favorite, :update, :destroy]
+  before_action :set_festival, only: [:show, :favorite, :update, :destroy, :unfavorite]
 
   # GET /festivals
   def index
@@ -31,10 +31,15 @@ class FestivalsController < ApplicationController
     render json: @festival
   end
 
+  # POST /festivals/:id/unfavorite
+  def unfavorite
+    @festival.users.delete(current_user)
+    render json: @festival
+  end
+
   # POST /festivals
   def create
     @festival = Festival.new(festival_params)
-    @festival.user = current_user
 
     if @festival.save
       render json: @festival, status: :created, location: @festival
@@ -65,6 +70,6 @@ class FestivalsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def festival_params
-      params.require(:festival).permit(:cost, :start, :finish, :minimum_age, :location, :details, :image, :festival_name, user_ids:[])
+      params.require(:festival).permit(:cost, :start, :finish, :minimum_age, :location, :details, :image, :festival_name, :latitude, :longitude, user_ids:[])
     end
 end
