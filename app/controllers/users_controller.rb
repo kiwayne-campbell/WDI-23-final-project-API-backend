@@ -25,6 +25,8 @@ class UsersController < ApplicationController
     end
   end
 
+  
+
   # PATCH/PUT /users/1
   def update
     @user.user = current_user

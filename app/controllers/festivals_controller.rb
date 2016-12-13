@@ -14,6 +14,12 @@ class FestivalsController < ApplicationController
     render json: @festivals
   end
 
+  # GET /festivals/featured
+  def featured
+    @festivals = Festival.all.sample(3)
+    render json: @festivals
+  end
+
   # GET /festivals/1
   def show
     render json: @festival, include: ['users', 'comments', 'comments.user']
