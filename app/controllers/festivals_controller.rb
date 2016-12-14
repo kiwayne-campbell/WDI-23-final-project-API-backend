@@ -16,7 +16,7 @@ class FestivalsController < ApplicationController
 
   # GET /festivals/featured
   def featured
-    @festivals = Festival.all.sample(3)
+    @festivals = Festival.all.sample(6)
     render json: @festivals
   end
 

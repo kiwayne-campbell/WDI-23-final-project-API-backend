@@ -29,7 +29,7 @@ class UsersController < ApplicationController
 
   # PATCH/PUT /users/1
   def update
-    @user.user = current_user
+    # @user.user = current_user
 
     if @user.update(user_params)
       render json: @user
