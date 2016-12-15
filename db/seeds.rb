@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-["users"].each do |table_name|
+["users","festivals","comments","festivals_users"].each do |table_name|
   ActiveRecord::Base.connection.execute("TRUNCATE #{table_name} RESTART IDENTITY CASCADE")
 end
 
@@ -20,6 +20,190 @@ User.create!([{
   email: "emily.isacke@ga.co",
   password: "password",
   password_confirmation: "password"
+},{
+  username: "emilyi",
+  email: "emily.isacke@ga.co",
+  password: "password",
+  password_confirmation: "password"
+},{
+  username: "emilyi",
+  email: "emily.isacke@ga.co",
+  password: "password",
+  password_confirmation: "password"
+},{
+  username: "emilyi",
+  email: "emily.isacke@ga.co",
+  password: "password",
+  password_confirmation: "password"
+},{
+  username: "emilyi",
+  email: "emily.isacke@ga.co",
+  password: "password",
+  password_confirmation: "password"
+}])
+
+Festival.create!([{
+  festival_name: "mickyginger",
+  location: "mike.hayden@ga.co",
+  start: "password",
+  finish: "password"
+  minimum_age:
+  cost:
+  details:
+  latitude:
+  longitude:
+},{
+  festival_name: "mickyginger",
+  location: "mike.hayden@ga.co",
+  start: "password",
+  finish: "password"
+  minimum_age:
+  cost:
+  details:
+},{
+  festival_name: "mickyginger",
+  location: "mike.hayden@ga.co",
+  start: "password",
+  finish: "password"
+  minimum_age:
+  cost:
+  details:
+},{
+  festival_name: "mickyginger",
+  location: "mike.hayden@ga.co",
+  start: "password",
+  finish: "password"
+  minimum_age:
+  cost:
+  details:
+},{
+  festival_name: "mickyginger",
+  location: "mike.hayden@ga.co",
+  start: "password",
+  finish: "password"
+  minimum_age:
+  cost:
+  details:
+},{
+  festival_name: "mickyginger",
+  location: "mike.hayden@ga.co",
+  start: "password",
+  finish: "password"
+  minimum_age:
+  cost:
+  details:
+},{
+  festival_name: "mickyginger",
+  location: "mike.hayden@ga.co",
+  start: "password",
+  finish: "password"
+  minimum_age:
+  cost:
+  details:
+},{
+  festival_name: "mickyginger",
+  location: "mike.hayden@ga.co",
+  start: "password",
+  finish: "password"
+  minimum_age:
+  cost:
+  details:
+},{
+  festival_name: "mickyginger",
+  location: "mike.hayden@ga.co",
+  start: "password",
+  finish: "password"
+  minimum_age:
+  cost:
+  details:
+},{
+  festival_name: "mickyginger",
+  location: "mike.hayden@ga.co",
+  start: "password",
+  finish: "password"
+  minimum_age:
+  cost:
+  details:
+},{
+  festival_name: "mickyginger",
+  location: "mike.hayden@ga.co",
+  start: "password",
+  finish: "password"
+  minimum_age:
+  cost:
+  details:
+},{
+  festival_name: "mickyginger",
+  location: "mike.hayden@ga.co",
+  start: "password",
+  finish: "password"
+  minimum_age:
+  cost:
+  details:
+},{
+  festival_name: "mickyginger",
+  location: "mike.hayden@ga.co",
+  start: "password",
+  finish: "password"
+  minimum_age:
+  cost:
+  details:
+},{
+  festival_name: "mickyginger",
+  location: "mike.hayden@ga.co",
+  start: "password",
+  finish: "password"
+  minimum_age:
+  cost:
+  details:
+},{
+  festival_name: "mickyginger",
+  location: "mike.hayden@ga.co",
+  start: "password",
+  finish: "password"
+  minimum_age:
+  cost:
+  details:
+},{
+  festival_name: "mickyginger",
+  location: "mike.hayden@ga.co",
+  start: "password",
+  finish: "password"
+  minimum_age:
+  cost:
+  details:
+},{
+  festival_name: "mickyginger",
+  location: "mike.hayden@ga.co",
+  start: "password",
+  finish: "password"
+  minimum_age:
+  cost:
+  details:
+},{
+  festival_name: "mickyginger",
+  location: "mike.hayden@ga.co",
+  start: "password",
+  finish: "password"
+  minimum_age:
+  cost:
+  details:
+},{
+  festival_name: "mickyginger",
+  location: "mike.hayden@ga.co",
+  start: "password",
+  finish: "password"
+  minimum_age:
+  cost:
+  details:
+},{
+  festival_name: "mickyginger",
+  location: "mike.hayden@ga.co",
+  start: "password",
+  finish: "password"
+  minimum_age:
+  cost:
+  details:
 }])
 
 puts User.all
