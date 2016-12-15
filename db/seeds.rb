@@ -49,7 +49,7 @@ User.create!([{
 }])
 
 Festival.create!([{
-  festival_name: "Tasty Festival",
+  festival_name: "Keeerazy Festival",
   location: "Somerset",
   start: "2017-03-01",
   finish: "2017-03-04",
@@ -85,7 +85,7 @@ Festival.create!([{
   latitude:"",
   longitude:""
 },{
-  festival_name: "Tasty Festival",
+  festival_name: "Javascript Festival",
   location: "Liverpool, United Kingdom",
   start: "2017-03-01",
   finish: "2017-03-04",
@@ -97,7 +97,7 @@ Festival.create!([{
   latitude:"",
   longitude:""
 },{
-  festival_name: "Tasty Festival",
+  festival_name: "Gumball 3000 Festival",
   location: "Cardiff, United Kingdom",
   start: "2017-03-01",
   finish: "2017-03-04",
@@ -109,7 +109,7 @@ Festival.create!([{
   latitude:"",
   longitude:""
 },{
-  festival_name: "Tasty Festival",
+  festival_name: "Sewing Festival",
   location: "Scotland, United Kingdom",
   start: "2017-03-01",
   finish: "2017-03-04",
@@ -121,7 +121,7 @@ Festival.create!([{
   latitude:"",
   longitude:""
 },{
-  festival_name: "Tasty Festival",
+  festival_name: "Drink-a-lot Festival",
   location: "Newcastle, United Kingdom",
   start: "2017-03-01",
   finish: "2017-03-04",
@@ -133,7 +133,7 @@ Festival.create!([{
   latitude:"",
   longitude:""
 },{
-  festival_name: "Tasty Festival",
+  festival_name: "Space Festival",
   location: "Ireland, United Kingdom",
   start: "2017-03-01",
   finish: "2017-03-04",
@@ -145,7 +145,7 @@ Festival.create!([{
   latitude:"",
   longitude:""
 },{
-  festival_name: "Tasty Festival",
+  festival_name: "Psychadelic Festival",
   location: "Berlin, Germany",
   start: "2017-03-01",
   finish: "2017-03-04",
@@ -157,7 +157,7 @@ Festival.create!([{
   latitude:"",
   longitude:""
 },{
-  festival_name: "Tasty Festival",
+  festival_name: "Jokes Festival",
   location: "Zurich, Switzerland",
   start: "2017-03-01",
   finish: "2017-03-04",
@@ -169,7 +169,7 @@ Festival.create!([{
   latitude:"",
   longitude:""
 },{
-  festival_name: "Tasty Festival",
+  festival_name: "Snow Festival",
   location: "Dorset, United Kingdom",
   start: "2017-03-01",
   finish: "2017-03-04",
@@ -181,7 +181,7 @@ Festival.create!([{
   latitude:"",
   longitude:""
 },{
-  festival_name: "Tasty Festival",
+  festival_name: "Food Festival",
   location: "Plymouth, United Kingdom",
   start: "2017-03-01",
   finish: "2017-03-04",
@@ -193,7 +193,7 @@ Festival.create!([{
   latitude:"",
   longitude:""
 },{
-  festival_name: "Tasty Festival",
+  festival_name: "LGBT Festival",
   location: "Sheffield, United Kingdom",
   start: "2017-03-01",
   finish: "2017-03-04",
@@ -205,7 +205,7 @@ Festival.create!([{
   latitude:"",
   longitude:""
 },{
-  festival_name: "Tasty Festival",
+  festival_name: "Funky Festival",
   location: "New York, United States",
   start: "2017-03-01",
   finish: "2017-03-04",
@@ -217,7 +217,7 @@ Festival.create!([{
   latitude:"",
   longitude:""
 },{
-  festival_name: "Tasty Festival",
+  festival_name: "Drone Festival",
   location: "San Francisco, United States",
   start: "2017-03-01",
   finish: "2017-03-04",
@@ -229,7 +229,7 @@ Festival.create!([{
   latitude:"",
   longitude:""
 },{
-  festival_name: "Tasty Festival",
+  festival_name: "Film Festival",
   location: "Auckland, New Zealand",
   start: "2017-03-01",
   finish: "2017-03-04",
@@ -241,7 +241,7 @@ Festival.create!([{
   latitude:"",
   longitude:""
 },{
-  festival_name: "Tasty Festival",
+  festival_name: "Airplane Festival",
   location: "Tokyo, Japan",
   start: "2017-03-01",
   finish: "2017-03-04",
@@ -253,7 +253,7 @@ Festival.create!([{
   latitude:"",
   longitude:""
 },{
-  festival_name: "Tasty Festival",
+  festival_name: "Comic Festival",
   location: "Paris, France",
   start: "2017-03-01",
   finish: "2017-03-04",
@@ -265,7 +265,7 @@ Festival.create!([{
   latitude:"",
   longitude:""
 },{
-  festival_name: "Tasty Festival",
+  festival_name: "a-Nice Festival",
   location: "Toronto, Canada",
   start: "2017-03-01",
   finish: "2017-03-04",
@@ -277,7 +277,7 @@ Festival.create!([{
   latitude:"",
   longitude:""
 },{
-  festival_name: "Tasty Festival",
+  festival_name: "Down-under Festival",
   location: "Melbourne, Australia",
   start: "2017-03-01",
   finish: "2017-03-04",
