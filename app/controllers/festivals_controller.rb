@@ -3,7 +3,7 @@ class FestivalsController < ApplicationController
 
   # GET /festivals
   def index
-    
+
     if params[:q]
       @festivals = Festival.where("festival_name ILIKE :q OR location ILIKE :q", q: "%#{params[:q]}%")
     else
@@ -15,7 +15,7 @@ class FestivalsController < ApplicationController
 
   # GET /festivals/featured
   def featured
-    @festivals = Festival.all.sample(6)
+    @festivals = Festival.all.sample(3)
     render json: @festivals
   end
 
