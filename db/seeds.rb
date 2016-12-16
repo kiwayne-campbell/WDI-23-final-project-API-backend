@@ -291,3 +291,4 @@ Festival.create!([{
 }])
 
 puts User.all
+puts Festival.all
