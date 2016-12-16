@@ -36,7 +36,7 @@ User.create!([{
   password_confirmation: "password"
 },{
   username: "kiwi",
-  email: "kiwi.@gamail.com",
+  email: "kiwi@gmail.com",
   image: "https://lh5.googleusercontent.com/-FI3UvSKqsjk/VGwZAB7QJSI/AAAAAAAABsE/4gzW2GgFALw/w822-h822/hingle.jpg",
   password: "password",
   password_confirmation: "password"
