@@ -1,6 +1,5 @@
 class CommentSerializer < ActiveModel::Serializer
-  attributes :id, :title, :comment_date, :body, :user
+  attributes :id, :title, :comment_date, :body
   belongs_to :user
-  has_one :festival
-
+  belongs_to :festival
 end
